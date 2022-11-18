@@ -1,3 +1,11 @@
+    /* initialize jsPsych */
+    var jsPsych = initJsPsych({
+        on_finish: function () {
+          jsPsych.data.displayData();
+        }
+      });
+  
+
 //Create timeline
 var timeline = [];
 
@@ -15,8 +23,6 @@ var welcome = {
     type: jsPsychSurveyText,
     questions: [{prompt: "<p><div style ='font-size:50px;'>Welcome to the experiment!</div></p>" +
     "<p><div style ='font-size:50px;'>Please enter your participant ID.</div></p>", name: 'PID', required: true}],
-    data: {startdate: fulldate},
-    trial_duration: 0,
     on_finish: function(data) {
     // when this trial ends, check the data
     //console.log('response: ', data.response);
