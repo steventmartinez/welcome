@@ -3,11 +3,11 @@
   <head>
     <title>Prolific Study</title> 
 
-    <script src = "welcome1/jspsych/jspsych.js" ></script>
-    <script src = "welcome1/jspsych/plugin-survey-text_SM.js" ></script>
-    <link href = "welcome1/jspsych/jspsych.css" rel= "stylesheet" type= "text/css">
-    <script type="text/javascript" src= "welcome1/jspsych/plugin-pavlovia-2022.1.1.js"></script>
-    <script src = "welcome1/welcome.js"></script>
+    <script src = "jspsych/jspsych.js" ></script>
+    <script src = "jspsych/plugin-html-keyboard-response.js" ></script>
+    <link href = "jspsych.css" rel= "stylesheet" type= "text/css">
+    <script type="text/javascript" src= "jspsych/plugin-pavlovia-2022.1.1.js"></script>
+    <script src = "welcome.js"></script>
     <style>
         body {
 background-color: black;
@@ -21,10 +21,7 @@ background-color: black;
 <body></body>
 <script>
 
-
-// Initialize the experiment -- THE INITIALIZE PART HAS TO BE WRITTEN IN THE TASK SCRIPT THAT YOU ARE SUBSEQUENTLY RUNNING AS PART OF THE MAIN SCRIPT
-
-
+//Run timeline
 jsPsych.run(timeline);
 
 </script>
